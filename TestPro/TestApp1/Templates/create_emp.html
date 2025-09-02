@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Add Employee</title>
+</head>
+<body>
+	<h2 align="center">Employee Information</h2>
+	<marquee>Fill the employee details and click on ADD button</marquee>
+	<form action="/add_emp/" method="GET">
+		<table align="center" border=1 cellpadding="10">
+			<tr>
+				<th>Employee Name</th>
+				<td><input type="text" name="e_name" value="enter your name"></td>
+			</tr>
+			<tr>
+				<th>Employee Age</th>
+				<td><input type="text" name="e_age" value="enter your age"></td>
+			</tr>
+			<tr>
+				<th>Employee Location</th>
+				<td><input type="text" name="e_loc" value="Enter your location"></td>
+			</tr>
+			<tr>
+				<th>Employee Salary</th>
+				<td><input type="text" name="e_salary" value="Enter your salary"></td>
+			</tr>
+			<tr>
+				<td colspan=2><center><input type="submit" value="Add"></center></td>
+			</tr>		
+		
+		</table>
+	
+		
+	</form>
+	<center><a href="/show_emp/">Show Employee</a></center>
+	<center><a href='/load_html/'>HOME</a></center>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Employee Info</title>
+</head>
+<body>
+	<h1 align="center">Employee Records</h1>
+	<table align="center" border="1" cellpadding="10">
+		<tr>
+			<th>Name</th>
+			<th>Age</th>
+			<th>Salary</th>
+			<th>Location</th>
+		</tr>
+		{% for i in employee %}
+		<tr>
+			<td>{{i.emp_name}}</td>
+			<td>{{i.emp_age}}</td>
+			<td>{{i.emp_salary}}</td>
+			<td>{{i.emp_location}}</td>
+		</tr>
+		 
+	{% endfor %}
+	</table>
+	<center><a href='/load_add_emp/'>Add Employee</a></center>
+	<center><a href='/load_html/'>HOME</a></center>
+</body>
+</html>
